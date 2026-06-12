@@ -20,6 +20,7 @@ RUN hf download fishaudio/s2-pro \
 
 # 4. Copy your local files
 COPY ./src /app/src
+COPY ./references /app/references
 RUN chmod +x /app/src/run.sh
 
 # 5. Environment setup
